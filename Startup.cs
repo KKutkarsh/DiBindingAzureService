@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+﻿using AzureFunctionTester.Helpers;
+using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: FunctionsStartup(typeof(AzureFunctionTester.Startup))]
@@ -10,6 +11,7 @@ namespace AzureFunctionTester
         {
             builder.Services.AddHttpClient();
             builder.Services.AddLogging();
+            builder.Services.AddOutputQueue();
         }
     }
 }
