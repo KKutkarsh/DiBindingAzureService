@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 [assembly: FunctionsStartup(typeof(AzureFunctionTester.Startup))]
 namespace AzureFunctionTester
 {
-    internal class Startup : FunctionsStartup
+    internal class Startup :FunctionsStartup
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
